@@ -1,0 +1,36 @@
+import { Helmet } from "react-helmet-async";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import WhyUs from "@/components/WhyUs";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+
+const Index = () => {
+  return (
+    <>
+      <Helmet>
+        <title>Pojoslink - Starlink Installation & IT Services</title>
+        <meta 
+          name="description" 
+          content="Expert Starlink installation, IT infrastructure, network solutions, and biometric systems. Professional tech services for businesses and homes." 
+        />
+        <meta name="keywords" content="Starlink installation, IT support, network services, biometric systems, tech support" />
+        <link rel="canonical" href="https://pojoslink.com" />
+      </Helmet>
+
+      <div className="min-h-screen bg-background">
+        <Header />
+        <main>
+          <Hero />
+          <Services />
+          <WhyUs />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </>
+  );
+};
+
+export default Index;
